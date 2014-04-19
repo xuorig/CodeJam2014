@@ -1,6 +1,6 @@
 BASE_COOKIE_RATE = 2
 
-def do_case(out, C, F, X):
+def do_case(C, F, X):
   seconds = 0
   cookie_rate = BASE_COOKIE_RATE
   total_cookies = 0
@@ -25,7 +25,7 @@ def main():
     T  = int(f.readline())
     for t in range(T):
       C, F, X = [float(number) for number in f.readline().split()]
-      out.write("Case #%s: " % (str(t+1)) + str(do_case(out, C, F, X)) + "\n")
+      out.write("Case #%s: " % (str(t+1)) + str(do_case(C, F, X)) + "\n")
 
 if __name__ == '__main__':
     main()
